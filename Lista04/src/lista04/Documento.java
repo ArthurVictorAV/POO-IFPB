@@ -1,20 +1,45 @@
 package lista04;
 
 public class Documento {
-    public String nome;
-    public int numeroPaginas;
-    public String prioridade;
-    public String status;
+    private String nome;
+    private int numeroPaginas;
+    private String prioridade, status;
 
-    public Documento(String nome, int numeroPaginas, String prioridade, String status){
-
-        if (nome == null || nome.isBlank() || numeroPaginas <=0 || prioridade != "NORMAL" || prioridade != "URGENTE")
+    public Documento(String nome, int numeroPaginas, String prioridade) {
+        if (nome == null || nome.isEmpty() || numeroPaginas <= 0 || prioridade == null
+                || !prioridade.equals("NORMAL") && !prioridade.equals("URGENTE")) {
             throw new IllegalArgumentException();
-
+        }
         this.nome = nome;
         this.numeroPaginas = numeroPaginas;
         this.prioridade = prioridade;
-        this.status = status;
+        this.status = "AGUARDANDO";
+    }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void iniciarImpressao() {
+        if (status.equals("AGUARDANDO")) {
+            status = "IMPRIMINDO";
+        }
+    }
+
+    public void concluir() {
+        if (status.equals("IMPRIMINDO")) {
+            status = "CONCLUIDO";
+        }
+    }
+
+    public String getPrioridade() {
+        return prioridade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    public int getNumeroPaginas(){
+        return numeroPaginas;
     }
 }

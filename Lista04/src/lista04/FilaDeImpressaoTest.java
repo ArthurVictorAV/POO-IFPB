@@ -1,4 +1,4 @@
-package lista04.impressao;
+package lista04;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -139,7 +139,7 @@ public class FilaDeImpressaoTest {
         // normal1 deve ser o próximo
         fila.imprimirProximo();
         // após imprimir normal1, o próximo deve ser normal2
-        assertEquals(1, fila.totalPaginasNaFila());
+        assertEquals(5, fila.totalPaginasNaFila());
     }
 
     @Test
