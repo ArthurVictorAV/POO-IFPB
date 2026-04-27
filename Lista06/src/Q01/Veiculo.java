@@ -1,4 +1,4 @@
-package q1;
+package Q01;
 
 public abstract class Veiculo {
     protected String placa, anoFabricacao, categoria;
