@@ -1,4 +1,4 @@
-package Q01;
+package q1;
 
 public class VeiculoCNPJ extends Veiculo{
     private String CNPJ;

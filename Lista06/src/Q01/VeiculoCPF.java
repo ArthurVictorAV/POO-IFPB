@@ -1,4 +1,4 @@
-package Q01;
+package q1;
 
 public class VeiculoCPF extends Veiculo{
     private String CPF;
