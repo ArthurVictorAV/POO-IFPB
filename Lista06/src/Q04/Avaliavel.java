@@ -1,4 +1,6 @@
 package Q04;
 
-public class Avaliavel {
+public interface Avaliavel {
+    double getNotaMedia();
+    String gerarResumoPublico();
 }

@@ -1,4 +1,6 @@
 package Q04;
 
-public class Compravel {
+public interface Compravel {
+    double getPreco();
+    String gerarRecibo(String nomeComprador);
 }

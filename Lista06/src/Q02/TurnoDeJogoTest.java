@@ -16,7 +16,7 @@ public class TurnoDeJogoTest {
         guerreiro = new Guerreiro("Thorin", 100, 30);
         mago      = new Mago("Gandalf", 80, 50, 20, 60);
         arqueiro  = new Arqueiro("Legolas", 90, 25, 3);
-        alvo      = new Personagem("Inimigo", 200);
+        alvo      = new Guerreiro("Inimigo", 200,0);
     }
 
     @Test
