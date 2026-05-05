@@ -1,4 +1,4 @@
-package Aula13.Exemplos;
+package ExemplosException;
 
 public class ValidacaotextualException extends Exception{
     ValidacaotextualException(String msg){

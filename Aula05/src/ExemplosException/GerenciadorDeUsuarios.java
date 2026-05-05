@@ -1,4 +1,4 @@
-package Aula13.Exemplos;
+package ExemplosException;
 
 import java.time.LocalDateTime;
 
